@@ -10,13 +10,31 @@
   --font-size-h3: 1.25rem;
   --font-size-h2: 1.5rem;
   --font-size-h1: 2.5rem;
+
+--border-scribble: url('images/scribble-border.svg') 30 / 30px / 0 round;
 } 
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-body);
   background-color: var(--neutral-color);
   color: var(--primary-color);
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  padding: 0.5rem;
 }
 
 h1 {
@@ -38,6 +56,12 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
+.scribble-box {
+  border-image: var(--border-scribble);
+  border-style: solid;
+  border-width: 10px;
+}
+
 .btn {
   font-family: var(--font-heading);
   background-color: var(--neutral-color);
@@ -48,10 +72,108 @@ h3 {
   text-transform: uppercase;
 }
 
-.btn:active {
-  transform: scale(0.95);
-}
-
 .btn-orange {
   background-color: var(--secondary-color);
 }
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem  0.5rem 0.5rem;
+  background-color: var(--neutral-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.logo {
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header p {
+  text-align: right;
+  margin: 0;
+}
+
+/*hamburger menu */
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+}
+
+.menu-toggle:checked ~ .menu-overlay {
+  display: block;
+}
+
+header nav ul {
+ flex-direction: column;
+ list-style: none;
+ margin: 0;
+ padding: 0;  
+ position: absolute;
+ top: 100%;
+  right: 0;
+  width: 100%;
+  background-color: var(--neutral-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 30;
+}
+
+.menu-toggle:checked ~ nav ul {
+  max-height: 500px; 
+  }
+
+header nav ul li a{ 
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  color: var(--primary-color);
+  }
+
+.hamburger-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 40;
+ }
+
+.hamburger-icon img {
+  display: block;
+  width: 2rem;
+  height: auto;
+  padding-bottom: 0.2rem;
+ }
+
+
+/* Index*/
+.hero {
+  padding-top: 116px;
+}
+
+
+
+  /* HUSKELISTE
+  1. feste header, ikke scrollbar
+  2. legge til hamburger meny i resten av sidene
+  3. klikke utenfor for å lukke menuen
+  
