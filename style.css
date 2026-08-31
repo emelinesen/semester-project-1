@@ -1,0 +1,57 @@
+:root { 
+  --primary-color: #000000; 
+  --neutral-color: #ffffff; 
+  --secondary-color: #f76300; 
+
+  --font-heading: 'Cabin Sketch', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+
+  --font-size-body: 1rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h1: 2.5rem;
+} 
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-size: var(--font-size-h3);
+}
+
+.btn {
+  font-family: var(--font-heading);
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-orange {
+  background-color: var(--secondary-color);
+}
