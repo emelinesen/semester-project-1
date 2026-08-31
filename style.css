@@ -64,19 +64,19 @@ h3 {
 
 .btn {
   font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
   background-color: var(--neutral-color);
   color: var(--primary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0rem 0.5rem;
+  border-radius: 10px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .btn-orange {
   background-color: var(--secondary-color);
 }
 
-/* Header styles */
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -102,7 +102,7 @@ header p {
   margin: 0;
 }
 
-/*hamburger menu */
+/* Hamburger menu */
 .menu-toggle {
   position: absolute;
   opacity: 0;
@@ -125,9 +125,6 @@ header nav ul {
  list-style: none;
  margin: 0;
  padding: 0;  
- position: absolute;
- top: 100%;
-  right: 0;
   width: 100%;
   background-color: var(--neutral-color);
   max-height: 0;
@@ -135,7 +132,11 @@ header nav ul {
   transition: max-height 0.3s ease;
   z-index: 30;
 }
-
+header nav  {
+ position: absolute;
+ top: 100%;
+  right: 0;
+}
 .menu-toggle:checked ~ nav ul {
   max-height: 500px; 
   }
@@ -143,6 +144,7 @@ header nav ul {
 header nav ul li a{ 
   display: block;
   padding: 1rem;
+  margin: 0.1rem;
   text-align: center;
   text-decoration: none;
   font-family: var(--font-heading);
@@ -168,12 +170,53 @@ header nav ul li a{
 /* Index*/
 .hero {
   padding-top: 116px;
+  position: relative;  
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
+.hero .btn {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 60%;
+ } 
+
+ .cards {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.card a{ 
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.card-text  {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.card a img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
 
   /* HUSKELISTE
-  1. feste header, ikke scrollbar
-  2. legge til hamburger meny i resten av sidene
-  3. klikke utenfor for å lukke menuen
+  1. Tekst i knapp må ikke breake
   
