@@ -136,6 +136,8 @@ header nav  {
  position: absolute;
  top: 100%;
   right: 0;
+  left: 0;
+  width: 100%;
 }
 .menu-toggle:checked ~ nav ul {
   max-height: 500px; 
@@ -166,7 +168,68 @@ header nav ul li a{
   padding-bottom: 0.2rem;
  }
 
+/* Footer */
 
+footer  {
+  background-color: var(--primary-color);
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+}
+
+footer p  {
+  padding-left: 0.5rem;
+  color: var(--neutral-color);
+}
+
+.hours  {
+  grid-column: 1;
+  grid-row: 2;
+}
+ .location {
+  grid-column: 1;
+  padding-bottom: 2rem;
+ }
+
+ address {
+     font-style: normal;
+ }
+
+
+address.location img {
+  max-width: 60%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  padding-left: 0.5rem;
+}
+footer a {
+  color: var(--neutral-color);
+}
+
+footer nav  {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: end;
+}
+
+footer nav li {
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact {
+ 
+  padding-right: 0.5rem;
+  grid-column: 2;
+  text-align: end;
+}
+.social img {
+  padding: 0.2rem;
+}
 /* Index*/
 .hero {
   padding-top: 116px;
@@ -206,7 +269,6 @@ header nav ul li a{
   justify-content: center;
   align-items: center;
   text-align: center;
- 
 }
 
 .card a img {
