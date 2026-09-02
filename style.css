@@ -11,7 +11,7 @@
   --font-size-h2: 1.5rem;
   --font-size-h1: 2.5rem;
 
---border-scribble: url('images/scribble-border.svg') 30 / 30px / 0 round;
+--border-scribble: url('images/scribble-border.svg') 30 / 2rem / 0 round;
 } 
 
 * {
@@ -42,6 +42,7 @@ h1 {
   font-weight: bold;
   color: var(--primary-color);
   font-size: var(--font-size-h1);
+  text-align: center;
 }
 
 h2 {
@@ -59,7 +60,7 @@ h3 {
 .scribble-box {
   border-image: var(--border-scribble);
   border-style: solid;
-  border-width: 10px;
+  border-width: 0.5rem;
 }
 
 .btn {
@@ -130,7 +131,6 @@ header nav ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  z-index: 30;
 }
 header nav  {
  position: absolute;
@@ -138,6 +138,7 @@ header nav  {
   right: 0;
   left: 0;
   width: 100%;
+  z-index: 30;
 }
 .menu-toggle:checked ~ nav ul {
   max-height: 500px; 
@@ -250,8 +251,10 @@ footer nav li {
 
  .cards {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   margin: 1rem;
+  align-items: stretch;
 }
 
 .card a{ 
@@ -259,6 +262,8 @@ footer nav li {
   flex-direction: row;
   text-decoration: none;
   color: var(--primary-color);
+  /* height: 100%; */
+  align-items: flex-start;
 }
 
 .card-text  {
@@ -269,6 +274,15 @@ footer nav li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  align-self: stretch;
+  gap: 0.1rem;
+}
+.card-text h3 {
+  margin: 0.5rem;
+}
+
+.card-text p {
+  margin: 0.5rem;
 }
 
 .card a img {
@@ -277,8 +291,42 @@ footer nav li {
   width: 100%;
   height: auto;
   min-width: 0;
+  aspect-ratio: 1 / 1;
 }
 
+.card {
+  padding: 0.2rem;
+}
+
+.index-h1 {
+  color: var(--secondary-color);
+}
+
+.explore a {
+  color: var(--primary-color);
+}
+
+summary {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+summary::marker {
+  color: var(--secondary-color);
+}
+/* .intro img {
+  height: 20rem;
+  object-fit: cover;
+  width: 100%;
+}  */
+
+
   /* HUSKELISTE
+
+  index
   1. Tekst i knapp må ikke breake
+  2. vurdere størrelse på .intro img
+  3. legge ved bilde i explore section? 
   
