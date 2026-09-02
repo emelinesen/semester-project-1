@@ -36,6 +36,9 @@ body {
 main {
   padding: 0.5rem;
 }
+.page-content{
+  padding-top: 116px;
+}
 
 h1 {
   font-family: var(--font-heading);
@@ -49,12 +52,15 @@ h2 {
   font-family: var(--font-heading);
   color: var(--primary-color);
   font-size: var(--font-size-h2);
+  text-align: center;
+  font-weight: normal;
 }
 
 h3 {
   font-family: var(--font-heading);
   color: var(--primary-color);
   font-size: var(--font-size-h3);
+  font-weight: normal;
 }
 
 .scribble-box {
@@ -301,7 +307,11 @@ footer nav li {
 .index-h1 {
   color: var(--secondary-color);
 }
-
+/* .intro img {
+  height: 20rem;
+  object-fit: cover;
+  width: 100%;
+}  */
 .explore a {
   color: var(--primary-color);
 }
@@ -316,17 +326,35 @@ summary {
 summary::marker {
   color: var(--secondary-color);
 }
-/* .intro img {
-  height: 20rem;
+
+/* exhibitions */
+.exhibition h2 {
+  margin: 0;
+}
+ .exhibition img {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+aspect-ratio: 3 / 1;
   object-fit: cover;
   width: 100%;
-}  */
+ }
+.exhibition p {
+  margin-bottom: 0.2rem;
+}
 
+.discovery-lab img {
+aspect-ratio: 2 / 1;
+}
 
   /* HUSKELISTE
+  1. alle sider trenger 11px padding top pga header.
 
   index
   1. Tekst i knapp må ikke breake
   2. vurdere størrelse på .intro img
   3. legge ved bilde i explore section? 
   
+  exhibitions
+
+  visit
+  1.designe og lage contact form
