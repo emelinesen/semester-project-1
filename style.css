@@ -425,6 +425,7 @@ aspect-ratio: 2 / 1;
   margin: 0.5rem;
   grid-column: 1;
   align-self: center;
+  min-height: 0;
 }
 
 .event img {
@@ -433,6 +434,7 @@ aspect-ratio: 2 / 1;
   width: 100%;
   aspect-ratio: 4 / 3;
   align-self: stretch;
+  min-height: 0;
 }
 
 /* Involve + coming soon*/
