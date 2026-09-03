@@ -354,6 +354,7 @@ summary::marker {
 }
 .exhibition h2, .event h2 {
   margin: 0;
+  text-align: center;
 }
  .exhibition img {
   margin-top: 0.5rem;
@@ -393,8 +394,7 @@ aspect-ratio: 2 / 1;
 .event h2 {
     grid-column: 1 / -1;
     margin-bottom: 0.5rem;
-    text-align: center;
-}
+  }
 
 .btn-orange {
   background-color: var(--secondary-color);
