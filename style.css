@@ -438,8 +438,6 @@ aspect-ratio: 2 / 1;
   /* aspect-ratio: 4 / 3; */
   align-self: stretch;
   min-height: 0;
-  max-height: 15rem;
-  align-self: center;
 }
 
 /* Involve + coming soon*/
