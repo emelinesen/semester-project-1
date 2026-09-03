@@ -51,7 +51,7 @@
             more people, please contact us to arrange the tour.
           </p>
         </article>
-        <article class="visit-item hours-address">
+        <article class="visit-item hours">
           <h2>Opening hours</h2>
           <p>
             Monday: Closed<br />
@@ -62,16 +62,17 @@
             Saturday: 9:00 – 16:00<br />
             Sunday: 9:00 – 13:00 <br />
           </p>
+        </article>
+        <article class="visit-item address">
           <h2>Address</h2>
           <p>
             1 Rocket road,<br />
             Hawthorne,<br />
             CA 90250
           </p>
-          <img
+          <img class="location"
             src="images/location.png"
-            alt="Location of the museum on a street map"
-          />
+            alt="Location of the museum on a street map"/>
         </article>
         <div class="cafe-img">
           <img
@@ -98,7 +99,7 @@
             guides and braille display signs for the visually impaired.
           </p>
         </article>
-        <form class="contact-form" id="contact" action="mailto:csm@scientist.com" method="post">
+        <form class="contact-form visit-item" id="contact" action="mailto:csm@scientist.com" method="post">
           <h2>Contact us</h2>
           <label class="hidden" for="subject">Subject</label>
           <input class="form-field" type="text" id="subject" name="subject" placeholder="Subject" required />
@@ -133,8 +134,11 @@
           <li><a href="involve.html">Get Involved</a></li>
         </ul>
       </nav>
-      <address class="contact">
-        <p>csm@scientist.com<br />+01 321-867-2468</p>
+       <address class="contact">
+        <a href="visit.html#contact" aria-label="Contact us to send a message">
+          <p>csm@scientist.com</p>
+        </a>
+        <p>+01 321-867-2468</p>
         <div class="social">
           <a href="https://www.facebook.com/"
             ><img src="images/facebook.svg" alt="Visit our Facebook page"

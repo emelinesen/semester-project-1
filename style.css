@@ -89,6 +89,13 @@ h3 {
   text-align: center;
   white-space: nowrap;
 }
+
+.full-width {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+}
 /* Header */
 header {
   display: flex;
@@ -208,7 +215,7 @@ footer p  {
  }
 
 
-address.location img {
+.location img {
   max-width: 60%;
   aspect-ratio: 2 / 1;
   object-fit: cover;
@@ -429,21 +436,14 @@ aspect-ratio: 2 / 1;
 
 /* Involve + coming soon*/
 
-.involve-item h2 {
+.involve-item h2, .visit-item h2 {
   text-align: start;
   margin-bottom: 0.2rem;
 }
 
-.involve-item p {
+.involve-item p, .visit-item p {
   text-align: start;
   margin-top: 0;
-}
-
-.full-width {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  text-transform: uppercase;
 }
 
 /* Visit */
@@ -482,6 +482,34 @@ textarea.form-field {
   min-height: 7rem;
   resize: vertical;
 }
+
+.visit-item.address {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  row-gap: 0;
+  align-items: center;
+}
+
+.visit-item.address h2,.visit-item.address p {
+  grid-column: 1;
+  margin: 0;
+}
+
+.visit-item.address .location {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  max-height: 9rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 1rem 0;
+}
+
+.cafe-img {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+}
   /* HUSKELISTE
   1. fikse screeshots feil
 
@@ -489,8 +517,5 @@ textarea.form-field {
   1. Tekst i knapp må ikke breake
   2. vurdere størrelse på .intro img
   3. legge ved bilde i explore section, det hopper veldig med pil funkjsonen? 
-  
-  exhibitions
 
-  visit
  
