@@ -434,7 +434,7 @@ aspect-ratio: 2 / 1;
   grid-column: 2;
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
   /* aspect-ratio: 4 / 3; */
   align-self: stretch;
   min-height: 0;
