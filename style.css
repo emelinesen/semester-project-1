@@ -599,6 +599,13 @@ textarea.form-field {
   }
 
   /* Visit */
+  .facade-img {
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
   .visit-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -622,7 +629,7 @@ textarea.form-field {
 @media (min-width: 1024px) {
   main {
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 55rem;
   }
 
   .hamburger-icon,
@@ -683,8 +690,10 @@ textarea.form-field {
     grid-column: 1 / -1;
 margin-bottom: 0;
 margin-top: 0; */
-}
 
+.facade-img  {
+  height: 25rem;
+}
 .exhibition-list {
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
@@ -697,7 +706,9 @@ margin-top: 0; */
   right: -0.7rem;
   left: auto;
   transform: rotate(7deg);
-}
+}}
+
+
 @media (hover: hover) {
   header nav ul li a:hover {
     color: var(--secondary-color);
