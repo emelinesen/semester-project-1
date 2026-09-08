@@ -1,18 +1,18 @@
-:root { 
-  --primary-color: #000000; 
-  --neutral-color: #ffffff; 
-  --secondary-color: #f76300; 
+:root {
+  --primary-color: #000000;
+  --neutral-color: #ffffff;
+  --secondary-color: #f76300;
 
-  --font-heading: 'Cabin Sketch', sans-serif;
-  --font-body: 'Quicksand', sans-serif;
+  --font-heading: "Cabin Sketch", sans-serif;
+  --font-body: "Quicksand", sans-serif;
 
   --font-size-body: 1rem;
   --font-size-h3: 1.25rem;
   --font-size-h2: 1.5rem;
   --font-size-h1: 2.5rem;
 
---border-scribble: url('images/scribble-border.svg') 30 / 2rem / 0 round;
-} 
+  --border-scribble: url("images/scribble-border.svg") 30 / 2rem / 0 round;
+}
 
 * {
   box-sizing: border-box;
@@ -41,11 +41,11 @@ main {
   padding: 0.5rem;
   padding-bottom: 2rem;
 }
-.page-content{
+.page-content {
   padding-top: 116px;
 }
 
-.page-content h1{
+.page-content h1 {
   margin: 1rem;
 }
 
@@ -101,7 +101,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 2rem  0.5rem 0.5rem;
+  padding: 2rem 0.5rem 0.5rem;
   background-color: var(--neutral-color);
   position: fixed;
   width: 100%;
@@ -141,29 +141,29 @@ header p {
 }
 
 header nav ul {
- flex-direction: column;
- list-style: none;
- margin: 0;
- padding: 0;  
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-color: var(--neutral-color);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-header nav  {
- position: absolute;
- top: 100%;
+header nav {
+  position: absolute;
+  top: 100%;
   right: 0;
   left: 0;
   width: 100%;
   z-index: 30;
 }
 .menu-toggle:checked ~ nav ul {
-  max-height: 500px; 
-  }
+  max-height: 500px;
+}
 
-header nav ul li a{ 
+header nav ul li a {
   display: block;
   padding: 1rem;
   margin: 0.1rem;
@@ -172,48 +172,47 @@ header nav ul li a{
   font-family: var(--font-heading);
   font-size: var(--font-size-h3);
   color: var(--primary-color);
-  }
+}
 
 .hamburger-icon {
   display: flex;
   align-items: center;
   position: relative;
   z-index: 40;
- }
+}
 
 .hamburger-icon img {
   display: block;
   width: 2rem;
   height: auto;
   padding-bottom: 0.2rem;
- }
+}
 
 /* Footer */
 
-footer  {
+footer {
   background-color: var(--primary-color);
-  display: grid;  
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-footer p  {
+footer p {
   padding-left: 0.5rem;
   color: var(--neutral-color);
 }
 
-.hours  {
+.hours {
   grid-column: 1;
   grid-row: 2;
 }
- .location {
+.location {
   grid-column: 1;
   padding-bottom: 2rem;
- }
+}
 
- address {
-     font-style: normal;
- }
-
+address {
+  font-style: normal;
+}
 
 .location img {
   max-width: 60%;
@@ -225,7 +224,7 @@ footer a {
   color: var(--neutral-color);
 }
 
-footer nav  {
+footer nav {
   grid-column: 2;
   grid-row: 2;
   text-align: end;
@@ -242,7 +241,6 @@ footer nav li {
 }
 
 .contact {
- 
   padding-right: 0.5rem;
   grid-column: 2;
   text-align: end;
@@ -253,7 +251,7 @@ footer nav li {
 /* Index*/
 .hero {
   padding-top: 116px;
-  position: relative;  
+  position: relative;
 }
 
 .hero img {
@@ -266,9 +264,9 @@ footer nav li {
   position: absolute;
   bottom: 2.5rem;
   left: 50%;
- } 
+}
 
- .cards {
+.cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -276,7 +274,7 @@ footer nav li {
   align-items: stretch;
 }
 
-.card a{ 
+.card a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -285,7 +283,7 @@ footer nav li {
   align-items: flex-start;
 }
 
-.card-text  {
+.card-text {
   flex: 1;
   min-width: 0;
   display: flex;
@@ -347,22 +345,24 @@ summary::marker {
 }
 
 /* exhibitions */
-.exhibition-list, .event-list {
+.exhibition-list,
+.event-list {
   display: grid;
   grid-template-columns: 1;
   row-gap: 1rem;
 }
-.exhibition h2, .event h2 {
+.exhibition h2,
+.event h2 {
   margin: 0;
   text-align: center;
 }
- .exhibition img {
+.exhibition img {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-aspect-ratio: 3 / 1;
+  aspect-ratio: 3 / 1;
   object-fit: cover;
   width: 100%;
- }
+}
 .exhibition p {
   margin-bottom: 0.2rem;
 }
@@ -392,9 +392,9 @@ aspect-ratio: 2 / 1;
 }
 
 .event h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 0.5rem;
-  }
+  grid-column: 1 / -1;
+  margin-bottom: 0.5rem;
+}
 
 .btn-orange {
   background-color: var(--secondary-color);
@@ -477,12 +477,14 @@ aspect-ratio: 2 / 1;
 }
 /* Involve + coming soon*/
 
-.involve-item h2, .visit-item h2 {
+.involve-item h2,
+.visit-item h2 {
   text-align: start;
   margin-bottom: 0.2rem;
 }
 
-.involve-item p, .visit-item p {
+.involve-item p,
+.visit-item p {
   text-align: start;
   margin-top: 0;
 }
@@ -496,7 +498,7 @@ aspect-ratio: 2 / 1;
   margin-top: 1rem;
 }
 
-.hidden{
+.hidden {
   position: absolute;
   left: -9999px;
   overflow: hidden;
@@ -531,7 +533,8 @@ textarea.form-field {
   align-items: center;
 }
 
-.visit-item.address h2,.visit-item.address p {
+.visit-item.address h2,
+.visit-item.address p {
   grid-column: 1;
   margin: 0;
 }
@@ -552,23 +555,20 @@ textarea.form-field {
   height: auto;
 }
 
-
-
-@media  (min-width: 768px) {
-
+@media (min-width: 768px) {
   /* index  */
-    .cards {
+  .cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     grid-auto-flow: column;
   }
-.intro h1 {
+  .intro h1 {
     margin-bottom: 0;
-}
-.slogan {
+  }
+  .slogan {
     text-align: center;
-  } 
-.image-text-overlay {
+  }
+  .image-text-overlay {
     position: relative;
   }
 
@@ -595,8 +595,8 @@ textarea.form-field {
   }
 
   .welcome article {
-   align-content: space-around;
-  } 
+    align-content: space-around;
+  }
 
   /* Visit */
   .visit-info {
@@ -604,7 +604,8 @@ textarea.form-field {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .visit-info > .contact-form, .visit-item.address {
+  .visit-info > .contact-form,
+  .visit-item.address {
     grid-column: 1 / -1;
   }
 
@@ -614,8 +615,8 @@ textarea.form-field {
 
   .visit-info .hours {
     grid-column: 2;
-     grid-row: 1;
-  } 
+    grid-row: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -624,23 +625,24 @@ textarea.form-field {
     max-width: 70rem;
   }
 
-  .hamburger-icon, .menu-overlay, .menu-toggle  {
+  .hamburger-icon,
+  .menu-overlay,
+  .menu-toggle {
     display: none;
   }
   header nav {
     position: static;
     width: auto;
   }
- header nav .scribble-box {
-   border-image: none;
-   border: none;
-   border-style: none;
-   border-width: 0;
+  header nav .scribble-box {
+    border-image: none;
+    border: none;
+    border-style: none;
+    border-width: 0;
   }
   header p {
     margin-bottom: 0.4rem;
-
- }
+  }
   header nav ul {
     display: flex;
     flex-direction: row;
@@ -651,11 +653,11 @@ textarea.form-field {
     width: auto;
     gap: 0.5rem;
   }
-header nav ul li a {
+  header nav ul li a {
     position: relative;
   }
   header nav ul li a.active {
-   position: relative;
+    position: relative;
   }
 
   header nav ul li a.active::after {
@@ -665,14 +667,14 @@ header nav ul li a {
     left: 10%;
     width: 80%;
     height: 1rem;
-    background-image: url('images/active-underline.svg');
+    background-image: url("images/active-underline.svg");
     background-repeat: no-repeat;
   }
 
   .h1 {
     margin-top: 2rem;
   }
- /* .intro {
+  /* .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -681,21 +683,21 @@ header nav ul li a {
     grid-column: 1 / -1;
 margin-bottom: 0;
 margin-top: 0; */
-  }
+}
 
-  .exhibition-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-  }
-  .event-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-  }
-  .event-status.left {
+.exhibition-list {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+.event-list {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+.event-status.left {
   right: -0.7rem;
   left: auto;
-  transform: rotate(7deg);  
-  }
+  transform: rotate(7deg);
+}
 @media (hover: hover) {
   header nav ul li a:hover {
     color: var(--secondary-color);
@@ -704,12 +706,12 @@ margin-top: 0; */
   .card a:hover {
     transform: scale(1.02);
   }
-summary:hover {
-    color: var(--secondary-color);  
+  summary:hover {
+    color: var(--secondary-color);
   }
 }
 
-  /* HUSKELISTE
+/* HUSKELISTE
 
   index
   1. Tekst i knapp må ikke breake
