@@ -555,10 +555,50 @@ textarea.form-field {
 
 
 @media  (min-width: 768px) {
+
+  /* index  */
     .cards {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+  }
+.intro h1 {
+    margin-bottom: 0;
+}
+.slogan {
+    text-align: center;
+  } 
+.image-text-overlay {
+    position: relative;
   }
 
+  .image-text-overlay img {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 40%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .welcome article {
+   align-content: space-around;
+  } 
+
+  /* Visit */
   .visit-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -632,6 +672,17 @@ header nav ul li a {
   .h1 {
     margin-top: 2rem;
   }
+ /* .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  } 
+   .index-h1 {
+    grid-column: 1 / -1;
+margin-bottom: 0;
+margin-top: 0; */
+  }
+
   .exhibition-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
@@ -650,7 +701,12 @@ header nav ul li a {
     color: var(--secondary-color);
     transform: scale(1.2);
   }
-
+  .card a:hover {
+    transform: scale(1.02);
+  }
+summary:hover {
+    color: var(--secondary-color);  
+  }
 }
 
   /* HUSKELISTE
