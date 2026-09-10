@@ -87,7 +87,8 @@ h3 {
   border-radius: 10px;
   text-decoration: none;
   text-align: center;
-  white-space: nowrap;
+  transition: all 0.3s ease;
+  /* white-space: nowrap; */
 }
 
 .full-width {
@@ -95,6 +96,10 @@ h3 {
   justify-content: center;
   width: 100%;
   text-transform: uppercase;
+}
+
+.clickable {
+  
 }
 /* Header */
 header {
@@ -262,8 +267,9 @@ footer nav li {
 
 .hero .btn {
   position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
+  bottom: 4.5rem;
+  left: 60%;
+  margin-right: 1rem;
 }
 
 .cards {
@@ -557,6 +563,9 @@ textarea.form-field {
 
 @media (min-width: 768px) {
   /* index  */
+  .hero .btn {
+  padding: 0.5rem 1.5rem;
+  }
   .cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
@@ -595,7 +604,13 @@ textarea.form-field {
   }
 
   .welcome article {
-    align-content: space-around;
+    display: grid;
+gap: 0;
+align-items: start;
+  }
+
+  .welcome h2 {
+    grid-column: 1 / -1;
   }
 
   /* Visit */
@@ -624,6 +639,24 @@ textarea.form-field {
     grid-column: 2;
     grid-row: 1;
   }
+/* Involove */
+.involve-info {
+  display: grid;
+justify-content: center;
+}
+.involve-item {
+   margin-left: auto;
+    margin-right: auto;
+}
+
+  .involve-item p {
+    max-width: 30rem;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -678,9 +711,27 @@ textarea.form-field {
     background-repeat: no-repeat;
   }
 
+  .hero {
+    padding-left: 5rem ;
+    padding-right: 5rem;
+  }
+  .hero img {
+    max-height: 40rem;
+    object-fit: cover;
+    object-position: center;
+  }
+.hero .btn {
+  font-size: var(--font-size-h1);
+  padding: 1rem 2.5rem;
+  /* background-color: var(--secondary-color); */
+  /* color: var(--neutral-color); */
+  
+}
   .h1 {
     margin-top: 2rem;
   }
+
+
   /* .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -706,7 +757,13 @@ margin-top: 0; */
   right: -0.7rem;
   left: auto;
   transform: rotate(7deg);
-}}
+}
+
+/* Involove */
+.involve-info {
+  grid-template-columns: 1fr 1fr;
+}
+}
 
 
 @media (hover: hover) {
@@ -719,6 +776,9 @@ margin-top: 0; */
   }
   summary:hover {
     color: var(--secondary-color);
+  }
+  .hero .btn, .status-abled:hover {
+  transform: rotate(-2deg) scale(1.05);
   }
 }
 
