@@ -98,9 +98,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.clickable {
-  
-}
 /* Header */
 header {
   display: flex;
@@ -270,6 +267,7 @@ footer nav li {
   bottom: 4.5rem;
   left: 60%;
   margin-right: 1rem;
+  transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
 .cards {
@@ -319,6 +317,7 @@ footer nav li {
 
 .card {
   padding: 0.2rem;
+  transition: transform 0.3s ease;
 }
 
 .index-h1 {
@@ -765,20 +764,26 @@ margin-top: 0; */
 }
 }
 
-
+@media (hover:none) {
+  .hero .btn:active, .status-abled:active {
+    transform: scale(0.97);
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+  }
+}
 @media (hover: hover) {
   header nav ul li a:hover {
     color: var(--secondary-color);
     transform: scale(1.2);
   }
-  .card a:hover {
-    transform: scale(1.02);
+  .card:hover {
+    transform: rotate(-1.5deg);
   }
   summary:hover {
     color: var(--secondary-color);
   }
-  .hero .btn, .status-abled:hover {
-  transform: rotate(-2deg) scale(1.05);
+  .hero .btn:hover, .status-abled:hover {
+  transform: rotate(-4deg);
   }
 }
 
