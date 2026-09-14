@@ -303,6 +303,7 @@ footer nav li {
 }
 .card-text h3 {
   margin: 0.5rem;
+  white-space: nowrap;
 }
 
 .card-text p {
@@ -357,6 +358,17 @@ summary::marker {
 .welcome a {
   color: var(--primary-color);
   font-weight: bold;
+}
+
+  .slogan {
+    text-align: center;
+  }
+
+details {
+  margin-bottom: 1rem;
+}
+details p {
+  margin-bottom: 0.3rem;
 }
 
 /* exhibitions */
@@ -419,7 +431,7 @@ aspect-ratio: 2 / 1;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.status.disabled {
+.status-disabled {
   cursor: default;
 }
 .event-status {
@@ -461,7 +473,7 @@ aspect-ratio: 2 / 1;
 .subscribe {
   display: flex;
   flex-direction: column;
-  margin-top: rem;
+  margin-top: 1rem;
   text-align: center;
   align-items: center;
 }
@@ -501,7 +513,12 @@ aspect-ratio: 2 / 1;
 .involve-item p,
 .visit-item p {
   text-align: start;
+  line-height: 1.5;
   margin-top: 0;
+}
+.involve-item  {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Visit */
@@ -570,21 +587,24 @@ textarea.form-field {
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 744px) {
+
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+ 
   /* index  */
   .hero .btn {
   padding: 0.5rem 1.5rem;
   }
-  .cards {
+  /* .cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     grid-auto-flow: column;
-  }
+  } */
   .intro h1 {
     margin-bottom: 0;
-  }
-  .slogan {
-    text-align: center;
   }
   .image-text-overlay {
     position: relative;
@@ -746,6 +766,11 @@ justify-content: center;
   .h1 {
     margin-top: 2rem;
   }
+    .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+  }
 
 
   /* .intro {
@@ -782,10 +807,8 @@ margin-top: 0; */
 }
 
 @media (hover:none) {
-  .hero .btn:active, .status-abled:active {
+  .hero .btn:active, .status-abled:active, .card:active {
     transform: scale(0.97);
-    background-color: var(--secondary-color);
-    color: var(--neutral-color);
   }
 }
 @media (hover: hover) {
@@ -806,12 +829,6 @@ margin-top: 0; */
 
 /* HUSKELISTE
 
-  index
-  1. Tekst i knapp må ikke breake
-  2. vurdere størrelse på .intro img
-  3. legge ved bilde i explore section, det hopper veldig med pil funkjsonen? 
-  4. et annet herobilde?
-  5. orasnje strek under aktivside
 
 
  */
