@@ -250,6 +250,8 @@ footer nav li {
 }
 .social img {
   padding: 0.2rem;
+  width: 2rem;
+  height: auto;
 }
 /* Index*/
 .hero {
