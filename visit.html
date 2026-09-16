@@ -43,7 +43,13 @@
     <main class="page-content">
       <h1>Plan your visit</h1>
       <div>
-        <img class="facade-img" src="images/fasade.jpg" alt="The colorful facade of the museum" width="1200" height="800" />
+        <img
+          class="facade-img"
+          src="images/fasade.jpg"
+          alt="The colorful facade of the museum"
+          width="1200"
+          height="800"
+        />
         <p>The colorful museums facade is easy to spot!</p>
       </div>
       <div class="visit-info">
@@ -87,7 +93,8 @@
           <img
             src="images/cafe.jpg"
             alt="The museum cafe with a seating area to relax or study"
-            width="1200" height="800"
+            width="1200"
+            height="800"
           />
           <p>The museum cafe with a seating area to relax or study</p>
         </div>
@@ -109,44 +116,39 @@
             guides and braille display signs for the visually impaired.
           </p>
         </article>
-        <form
-          class="contact-form visit-item"
-          id="contact"
-          action="mailto:csm@scientist.com"
-          method="post"
-        >
-          <h2>Contact us</h2>
-          <label class="hidden" for="subject">Subject</label>
-          <input
-            class="form-field"
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject"
-            required
-          />
-          <label class="hidden" for="message">Your message</label>
-          <textarea
-            class="form-field"
-            id="message"
-            name="message"
-            placeholder="Your message"
-            required
-          ></textarea>
-          <label class="hidden" for="email">Your email address</label>
-          <input
-            class="form-field"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email address"
-            required
-          />
-          <a href="confirmation.html" class="btn scribble-box full-width"
-            >Send Message</a
-          >
-        </form>
       </div>
+      <form class="contact-form visit-item" id="contact">
+        <h2>Contact us</h2>
+        <label class="hidden" for="subject">Subject</label>
+        <input
+          class="form-field"
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+        <label class="hidden" for="message">Your message</label>
+        <textarea
+          class="form-field"
+          id="message"
+          name="message"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <label class="hidden" for="email">Your email address</label>
+        <input
+          class="form-field"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email address"
+          required
+        />
+        <a href="confirmation.html" class="btn scribble-box full-width"
+          >Send Message</a
+        >
+      </form>
     </main>
     <footer>
       <p class="logo">Community<br />Science<br />Museum</p>

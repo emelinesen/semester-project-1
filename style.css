@@ -32,7 +32,6 @@ body {
   font-size: var(--font-size-body);
   background-color: var(--neutral-color);
   color: var(--primary-color);
-  width: 100%;
   margin: 0;
 }
 
@@ -88,7 +87,6 @@ h3 {
   text-decoration: none;
   text-align: center;
   transition: all 0.3s ease;
-  /* white-space: nowrap; */
 }
 
 .full-width {
@@ -269,8 +267,7 @@ footer nav li {
   position: absolute;
   bottom: 4.5rem;
   left: 60%;
-  margin-right: 1rem;
-  transition: transform 0.15s ease, background-color 0.15s ease;
+  transition: transform 0.15s ease;
 }
 
 .cards {
@@ -286,7 +283,6 @@ footer nav li {
   flex-direction: row;
   text-decoration: none;
   color: var(--primary-color);
-  /* height: 100%; */
   align-items: flex-start;
 }
 
@@ -303,7 +299,7 @@ footer nav li {
 }
 .card-text h3 {
   margin: 0.5rem;
-  white-space: nowrap;
+ 
 }
 
 .card-text p {
@@ -332,15 +328,6 @@ footer nav li {
   scroll-margin-top: 116px;
 }
 
-/* .intro img {
-  height: 20rem;
-  object-fit: cover;
-  width: 100%;
-}  */
-
-.explore a {
-  color: var(--primary-color);
-}
 .welcome {
   display: grid;
   gap: 0.5rem;
@@ -360,9 +347,9 @@ summary::marker {
   font-weight: bold;
 }
 
-  .slogan {
-    text-align: center;
-  }
+.slogan {
+  text-align: center;
+}
 
 details {
   margin-bottom: 1rem;
@@ -375,7 +362,7 @@ details p {
 .exhibition-list,
 .event-list {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   row-gap: 1rem;
 }
 .exhibition h2,
@@ -393,10 +380,6 @@ details p {
 .exhibition p {
   margin-bottom: 0.2rem;
 }
-
-/* .discovery-lab img {
-aspect-ratio: 2 / 1;
-} */
 
 /* Events */
 
@@ -450,13 +433,11 @@ aspect-ratio: 2 / 1;
 }
 
 .event-text {
-  margin: 0.5rem;
+  margin: 0 0.5rem;
   grid-column: 1;
   grid-row: 3;
   align-self: center;
   min-height: 0;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .event img {
@@ -465,9 +446,8 @@ aspect-ratio: 2 / 1;
   object-fit: cover;
   width: 100%;
   aspect-ratio: 4 / 3;
-  align-self: stretch;
+  align-self: center;
   min-height: 0;
-  overflow: hidden;
 }
 
 .subscribe {
@@ -516,7 +496,7 @@ aspect-ratio: 2 / 1;
   line-height: 1.5;
   margin-top: 0;
 }
-.involve-item  {
+.involve-item {
   padding: 0 1.5rem;
   margin-bottom: 1rem;
 }
@@ -588,21 +568,16 @@ textarea.form-field {
 }
 
 @media (min-width: 744px) {
-
   main {
     max-width: 40rem;
     margin: 0 auto;
   }
- 
+
   /* index  */
   .hero .btn {
-  padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
-  /* .cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column;
-  } */
+
   .intro h1 {
     margin-bottom: 0;
   }
@@ -633,9 +608,9 @@ textarea.form-field {
 
   .welcome article {
     display: grid;
-gap: 1rem;
-align-items: start;
-align-content: start;
+    gap: 1rem;
+    align-items: start;
+    align-content: start;
   }
 
   .welcome h2 {
@@ -673,24 +648,22 @@ align-content: start;
     grid-column: 2;
     grid-row: 1;
   }
-/* Involove */
-.involve-info {
-  display: grid;
-justify-content: center;
-}
-.involve-item {
-   margin-left: auto;
+  /* Involove */
+  .involve-info {
+    display: grid;
+    justify-content: center;
+  }
+  .involve-item {
+    margin-left: auto;
     margin-right: auto;
-}
+  }
 
   .involve-item p {
     max-width: 30rem;
     line-height: 1.5;
     margin-left: auto;
     margin-right: auto;
-    
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -732,9 +705,6 @@ justify-content: center;
   header nav ul li a {
     position: relative;
   }
-  header nav ul li a.active {
-    position: relative;
-  }
 
   header nav ul li a.active::after {
     content: "";
@@ -748,7 +718,7 @@ justify-content: center;
   }
 
   .hero {
-    padding-left: 5rem ;
+    padding-left: 5rem;
     padding-right: 5rem;
   }
   .hero img {
@@ -756,58 +726,45 @@ justify-content: center;
     object-fit: cover;
     object-position: center;
   }
-.hero .btn {
-  font-size: var(--font-size-h1);
-  padding: 1rem 2.5rem;
-  /* background-color: var(--secondary-color); */
-  /* color: var(--neutral-color); */
-  
-}
-  .h1 {
+  .hero .btn {
+    font-size: var(--font-size-h1);
+    padding: 1rem 2.5rem;
+  }
+  h1 {
     margin-top: 2rem;
   }
-    .cards {
+  .cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
     grid-auto-flow: column;
   }
 
-
-  /* .intro {
-    display: grid;
+  .facade-img {
+    height: 25rem;
+  }
+  .exhibition-list {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  } 
-   .index-h1 {
-    grid-column: 1 / -1;
-margin-bottom: 0;
-margin-top: 0; */
-
-.facade-img  {
-  height: 25rem;
-}
-.exhibition-list {
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-}
-.event-list {
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-}
-.event-status.left {
-  right: -0.7rem;
-  left: auto;
-  transform: rotate(7deg);
+    column-gap: 1rem;
+  }
+  .event-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .event-status.left {
+    right: -0.7rem;
+    left: auto;
+    transform: rotate(7deg);
+  }
+  /* Involove */
+  .involve-info {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/* Involove */
-.involve-info {
-  grid-template-columns: 1fr 1fr;
-}
-}
-
-@media (hover:none) {
-  .hero .btn:active, .status-abled:active, .card:active {
+@media (hover: none) {
+  .hero .btn:active,
+  .status-abled:active,
+  .card:active {
     transform: scale(0.97);
   }
 }
@@ -822,13 +779,8 @@ margin-top: 0; */
   summary:hover {
     color: var(--secondary-color);
   }
-  .hero .btn:hover, .status-abled:hover {
-  transform: rotate(-4deg);
+  .hero .btn:hover,
+  .status-abled:hover {
+    transform: rotate(-4deg);
   }
 }
-
-/* HUSKELISTE
-
-
-
- */
