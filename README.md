@@ -1,6 +1,5 @@
 # semester-project-1
 
-AI usage log  
 
 Git & version control 
 
@@ -12,7 +11,7 @@ Building a JavaScript-free hamburger menu using the checkbox-hack technique, inc
 
 Stylesheet caching/ iPhone bug 
 
-Understanding why my CSS changes weren't showing on iPhone after pushing, and implementing a cache-busting query string (style.css?v=N) on the stylesheet link, updated across all pages each time I made a significant CSS change. This was not the problem though, it was how I had styled the images... caused by how align-self: stretch interacts with aspect-ratio. I styled the img differently after. 
+Understanding why my CSS changes weren't showing on iPhone after pushing, and doing a cache-busting method on the stylesheet link, updated across all pages each time I made a significant CSS change. But this didn't change my problem. I later deleted aspect-ratio and I styled the img differently which solved the problem. 
 
 CSS Grid & Flexbox layouts 
 
@@ -34,8 +33,9 @@ Forms
 
 Building visually-hidden labels for accessibility, and deciding to route form "submissions" to a static confirmation page since there is no backend. 
 
-Code review 
+Code formatting 
 
-A full review of all HTML and CSS files before submission, flagging bugs (missing brackets, duplicate attributes, invalid CSS values, dead/unused selectors) for me to fix. 
+To fix small errors and delete repeating code I sent the HTML and CSS.  I also got some feedback to changes that I wouldn´t do because the product was finished and also wouldn´t have thought of myself so i would not implement. 
 
+ 
  
