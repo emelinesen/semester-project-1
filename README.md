@@ -1,6 +1,7 @@
 # semester-project-1
 
 AI log
+
 Git & version control 
 
 Learning the init/add/commit/push workflow from scratch, resolving a merge conflict between the remote README and my local commits 
